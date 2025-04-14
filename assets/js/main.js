@@ -260,9 +260,9 @@
 			   window.addEventListener('scroll', preventScroll); 
 
 			// Prevent touch scrolling
-			document.addEventListener('touchmove', function (e) {
-			  e.preventDefault();
-			}, { passive: false });
+			//document.addEventListener('touchmove', function (e) {
+			//  e.preventDefault();
+			//}, { passive: false });
 
 			function preventScroll(event) {
 			window.scrollTo(0,0); // Force the scroll position to stay at the top
@@ -275,7 +275,7 @@
 			overlay.style.display = 'none';
 			body.classList.remove('no-scroll'); // Enable scrolling
 			window.removeEventListener('scroll', preventScroll); // Allow scrolling again
-			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, { passive: true }); // Re-enable touch scrolling
+			//document.addEventListener('touchmove', function (e) { e.preventDefault(); }, { passive: true }); // Re-enable touch scrolling
 			} else {
 			alert("Incorrect password. Please try again.");
 			input.value = ''; // Clear the input field
