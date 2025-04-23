@@ -2718,7 +2718,7 @@ input, select, textarea {
 
 	@media screen and (max-width: 480px) {
 		.gallery a:{
-			filter: grayscale(1) !important;
+			filter:none !important;
 			
 		}
 		
