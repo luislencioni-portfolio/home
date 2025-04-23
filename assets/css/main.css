@@ -2716,14 +2716,6 @@ input, select, textarea {
 		}
 	}
 
-	@media screen and (max-width: 480px) {
-		.gallery a:{
-			filter:none !important;
-			
-		}
-		
-	}
-
 	.gallery a:hover{
 		filter: grayscale(0);	
 		transition: ease-in-out 0.3s;		
