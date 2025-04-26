@@ -243,8 +243,9 @@
 		$(this).scrollTop(0);
 		});
 
+		// Password Protection Logic	
 		document.addEventListener('DOMContentLoaded', () => {
-			const password = "1234"; // Replace with your desired password
+			const password = "llportfolio"; // Replace with your desired password
 			   const modal = document.getElementById('password-modal');
 			const overlay = document.getElementById('overlay');
 			   const input = document.getElementById('password-input');
