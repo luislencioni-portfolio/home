@@ -2730,6 +2730,12 @@ input, select, textarea {
 		transition: ease-in-out 0.3s;				
 	}
 
+	@media screen and (max-width: 736px) {
+		.gallery a {
+			filter: none !important;
+		}	
+	}
+
 	&.gallery a {
 		overflow: hidden;
 		height: 1100px;
