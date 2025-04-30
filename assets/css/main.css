@@ -2020,34 +2020,29 @@ input, select, textarea {
 		}
 
 		#back-to-top {
-			display: none;
+			display: none; /* Hidden by default */
 			position: fixed;
-			bottom: 50px;
-			right: 8px;
+			bottom: 10vh;
+			right: 1.5vw;
 			z-index: 1000;
 			width: 40px;
-			height:40px;
+			height: 40px;
 			border-radius: 50%; /* Circular shape */
 			opacity: 0.3; /* Semi-transparent */
-			background-color: none;
-			outline-style: solid;
-			outline-width: 1.5px;
-			outline-color: #5a595c;
-			transition: all 0.3s ease; /* Smooth transition */
-			transform-origin:center;
+			background-color: transparent; /* Removed invalid 'none' */
+			outline: 1.5px solid #5a595c; /* Combined outline properties */
+			transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
 		}
 
 		@media screen and (max-width: 736px) {
 
 			#back-to-top {
-				bottom: 20px;
+				bottom: 10vh;
 				right: 50%;
 				transform: translateX(50%);
 				transform-origin:-80px;
 				background-color: white;
-				outline-style: none;
-				outline-width: none;
-				outline-color: none;
+				outline:none;
 			}
 		}
 
