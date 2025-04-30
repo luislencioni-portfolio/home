@@ -3617,7 +3617,13 @@ input, select, textarea {
         z-index: 1000;
         display: none;
 		opacity: 85%;
+		text line-height: font-size: 10px;
     }
+
+	#password-modal h3 {
+		line-height: .75;
+		margin: 1rem 0 1rem 0;
+		}
 
     #password-modal input {
         width: 100%;
